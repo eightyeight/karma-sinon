@@ -12,7 +12,7 @@ Install the module via npm
 $ npm install karma-sinon --save-dev
 ```
 
-Add `sinon` to the `frameworks` key in your Karma configuration:
+Add `sinon` to the `frameworks` key in your Karma configuration, and `karma-sinon` to `plugins`:
 
 ```js
 module.exports = function(config) {
@@ -20,6 +20,7 @@ module.exports = function(config) {
   config.set({
     #...
     frameworks: ['jasmine', 'sinon'],
+    plugins: ['karma-sinon'],
     #...
   });
 }
